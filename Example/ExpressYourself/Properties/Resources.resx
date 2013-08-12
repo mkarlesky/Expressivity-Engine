@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="KinectConnected" xml:space="preserve">
+    <value>Kinect Status: Connected</value>
+  </data>
+  <data name="KinectDisconnected" xml:space="preserve">
+    <value>Kinect Status: Disconnected</value>
+  </data>
+  <data name="KinectNoPower" xml:space="preserve">
+    <value>Kinect Status: Unpowered</value>
+  </data>
+  <data name="KinectNotReady" xml:space="preserve">
+    <value>Kinect Status: Not Ready</value>
+  </data>
+  <data name="KinectUnavailable" xml:space="preserve">
+    <value>Kinect Status: No ready device found</value>
+  </data>
+  <data name="KinectWaiting" xml:space="preserve">
+    <value>Kinect Status: Waiting…</value>
+  </data>
   <data name="NetworkPort" xml:space="preserve">
     <value>5204</value>
     <comment>Port for client connections</comment>

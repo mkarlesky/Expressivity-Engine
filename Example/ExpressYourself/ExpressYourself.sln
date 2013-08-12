@@ -5,12 +5,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressYourself", "ExpressY
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEF20419-910A-4454-A35C-FAD40456E517}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CEF20419-910A-4454-A35C-FAD40456E517}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{CEF20419-910A-4454-A35C-FAD40456E517}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{CEF20419-910A-4454-A35C-FAD40456E517}.Debug|x86.ActiveCfg = Debug|x86
 		{CEF20419-910A-4454-A35C-FAD40456E517}.Debug|x86.Build.0 = Debug|x86
+		{CEF20419-910A-4454-A35C-FAD40456E517}.Release|Any CPU.ActiveCfg = Release|x86
+		{CEF20419-910A-4454-A35C-FAD40456E517}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{CEF20419-910A-4454-A35C-FAD40456E517}.Release|Mixed Platforms.Build.0 = Release|x86
 		{CEF20419-910A-4454-A35C-FAD40456E517}.Release|x86.ActiveCfg = Release|x86
 		{CEF20419-910A-4454-A35C-FAD40456E517}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection

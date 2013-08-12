@@ -12,6 +12,7 @@ namespace ExpressYourself
         static void Main(string[] args)
         {
             var app = new Application(new ShutdownInterceptor());
+            app.Setup();
         }
     }
 }

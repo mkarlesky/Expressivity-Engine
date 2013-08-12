@@ -44,7 +44,7 @@ namespace ExpressivityEngine
 
         public static double DegreesToRadians(double angle)
         {
-            return Math.PI * angle / 180.0;
+            return (Math.PI * angle) / 180.0;
         }
     }
 }

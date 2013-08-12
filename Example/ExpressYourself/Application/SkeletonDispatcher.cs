@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Kinect;
 
-namespace ExpressivityEngine
+namespace ExpressYourself
 {
     public class SkeletonDispatcher
     {
