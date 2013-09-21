@@ -53,16 +53,24 @@ namespace ExpressivityEngine
 
         private static Vector3D VERTICAL_VECTOR = new Vector3D(0.0, -1.0, 0.0);
         private readonly KineticSegment[] _chain;
+        private readonly double _scalingFactor;
 
-        public ExpressivityMagnitudeExtractor(string name, KineticSegment[] chain)
+        public ExpressivityMagnitudeExtractor(string name, KineticSegment[] chain, double scalingFactor=1.0)
         {
             Name = name;
-            _chain = chain;
+
+            _chain         = chain;
+            _scalingFactor = scalingFactor;
 
             foreach (KineticSegment segment in chain)
             {
                 segment.Extractor = this;
             }
+        }
+
+        public ExpressivityMagnitudeExtractor(ExpressivityMagnitudeExtractor extractor, double scalingFactor) :
+            this(extractor.Name, extractor._chain, scalingFactor)
+        {
         }
 
         public string Name{ get; private set; }
@@ -120,7 +128,7 @@ namespace ExpressivityEngine
             double angle = Vector3D.AngleBetween(VERTICAL_VECTOR, vector);
 
             double perpindicularDistance = Math.Sin(Utilities.DegreesToRadians(angle)) * vector.Length;
-            return perpindicularDistance * totalMass;
+            return perpindicularDistance * totalMass * _scalingFactor;
         }
     }
 }
